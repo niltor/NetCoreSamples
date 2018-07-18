@@ -1,31 +1,4 @@
 <div style="width:400px;float:left">
-  <div *ngFor="let user of users.ToArray()">
-    <h1>{{user.name}}</h1>
-    <ul>
-      <li *ngFor="let blog of user.blogs.ToArray()">
-        <h3>
-          {{blog.title}}({{blog.view}}):{{blog.content}}
-        </h3>
-        <ul>
-          <li *ngFor="let comment of blog.comments.ToArray()">
-            <h5>
-              {{comment.name}}:{{comment.content}}
-            </h5>
-          </li>
-        </ul>
-      </li>
-    </ul>
-  </div>
-</div>
-<div style="width:400px;float:left">
-  <button (click)="badBlogs()">存在很差评论的博客</button>
-  <button (click)="sortByView()">按阅读数量排序 </button>
-  <button (click)="goodSeason()">描写夏天得到好评论的</button>
 
 
-  <ul>
-    <li *ngFor="let blog of blogs.ToArray()">
-      {{blog.title}}({{blog.view}}):{{blog.content}}
-    </li>
-  </ul>
 </div>

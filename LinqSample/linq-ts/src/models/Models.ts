@@ -1,4 +1,4 @@
-import { List } from '../../node_modules/linq.ts';
+import { List } from 'typescript-dotnet-es6/System/Collections/List';
 
 export interface ComponentModel {
   package?: string;
@@ -56,4 +56,14 @@ export class Comment {
     this.name = name;
     this.content = content;
   }
+}
+
+export class Province {
+  name: string;
+  city: List<City>;
+}
+
+export class City {
+  name: string;
+  area: List<string>;
 }
